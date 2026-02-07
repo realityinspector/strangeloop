@@ -1,0 +1,30 @@
+{
+  "name": "small_town",
+  "description": "A small rural town reacting to a proposed highway bypass",
+  "seed": 42,
+  "graph": {
+    "num_synths": 8,
+    "topology": "community",
+    "edge_density": 0.35,
+    "avg_connections": 3,
+    "rewire_prob": 0.3,
+    "num_communities": 3,
+    "seed": 42
+  },
+  "num_ticks": 5,
+  "time_scale": "days",
+  "start_date": "2025-06-01",
+  "token_budget": 80000,
+  "cost_limit_usd": 3.0,
+  "default_model": "openai/gpt-4o",
+  "fallback_model": "meta-llama/llama-3.1-70b-instruct:free",
+  "synth_detail_level": "standard",
+  "context_description": "Millfield is a quiet rural town of 2,000 people. The state DOT has proposed building a highway bypass that would cut through farmland on the east side. Residents are divided: some see economic opportunity, others fear losing their way of life. Town council meeting is next week.",
+  "envelope": { "attack": 0.3, "decay": 0.1, "sustain": 0.8, "release": 0.2 },
+  "conversation_patterns": ["DEBATE", "ARGUMENT", "BANTER", "CONFESSION"],
+  "event_frequency": 0.4,
+  "event_types": ["personal", "social", "economic"],
+  "animism_mode": false,
+  "output_dir": "output",
+  "verbose": false
+}
