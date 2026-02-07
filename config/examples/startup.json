@@ -1,0 +1,30 @@
+{
+  "name": "startup",
+  "description": "A tech startup navigating a pivotal funding round",
+  "seed": 42,
+  "graph": {
+    "num_synths": 6,
+    "topology": "scale_free",
+    "edge_density": 0.4,
+    "avg_connections": 3,
+    "rewire_prob": 0.3,
+    "num_communities": 2,
+    "seed": 42
+  },
+  "num_ticks": 5,
+  "time_scale": "days",
+  "start_date": "2025-06-01",
+  "token_budget": 60000,
+  "cost_limit_usd": 2.5,
+  "default_model": "openai/gpt-4o",
+  "fallback_model": "meta-llama/llama-3.1-70b-instruct:free",
+  "synth_detail_level": "standard",
+  "context_description": "NeuralEdge is a 12-person AI startup that just got a term sheet from a major VC. The founders disagree on whether to take the money (with board seats and control) or bootstrap with a smaller angel round. The team is stressed, working 14-hour days, and rumors of layoffs at competitors are making everyone anxious.",
+  "envelope": { "attack": 0.2, "decay": 0.15, "sustain": 0.9, "release": 0.15 },
+  "conversation_patterns": ["DEBATE", "NEGOTIATION", "ARGUMENT", "BANTER"],
+  "event_frequency": 0.5,
+  "event_types": ["personal", "social", "economic"],
+  "animism_mode": false,
+  "output_dir": "output",
+  "verbose": false
+}

@@ -1,0 +1,30 @@
+{
+  "name": "default_simulation",
+  "description": "Default Strange Loop simulation",
+  "seed": 42,
+  "graph": {
+    "num_synths": 5,
+    "topology": "small_world",
+    "edge_density": 0.3,
+    "avg_connections": 3,
+    "rewire_prob": 0.3,
+    "num_communities": 2,
+    "seed": 42
+  },
+  "num_ticks": 3,
+  "time_scale": "days",
+  "start_date": "2025-06-01",
+  "token_budget": 50000,
+  "cost_limit_usd": 2.0,
+  "default_model": "openai/gpt-4o",
+  "fallback_model": "meta-llama/llama-3.1-70b-instruct:free",
+  "synth_detail_level": "standard",
+  "context_description": "A neighborhood where everyone knows each other.",
+  "envelope": { "attack": 0.2, "decay": 0.1, "sustain": 0.8, "release": 0.3 },
+  "conversation_patterns": ["DEBATE", "BANTER", "ARGUMENT"],
+  "event_frequency": 0.3,
+  "event_types": ["personal", "social"],
+  "animism_mode": false,
+  "output_dir": "output",
+  "verbose": false
+}

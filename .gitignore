@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.env
+*.db
+*.sqlite
+output/
+.venv/
+.pytest_cache/
+*.png
+*.jpeg
+*.jpg
+.playwright-mcp/
+.DS_Store
+uv.lock
